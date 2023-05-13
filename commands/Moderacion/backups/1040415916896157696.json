@@ -1,0 +1,2023 @@
+{
+    "name": "Floppa Utilities Test Functions",
+    "verificationLevel": "NONE",
+    "explicitContentFilter": "DISABLED",
+    "defaultMessageNotifications": "ONLY_MENTIONS",
+    "afk": null,
+    "widget": {
+        "channel": null
+    },
+    "channels": {
+        "categories": [
+            {
+                "name": "principal",
+                "permissions": [],
+                "children": [
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "ticket",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "principal",
+                        "topic": null,
+                        "permissions": [],
+                        "messages": [
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!backup create",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:21.155Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "??????? XD=",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:21.053Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "No hay ningun backup con esa id!",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.901Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!backup load 1033191205976014848",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.776Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": null,
+                                        "type": "rich",
+                                        "description": "❌ - Por favor espera `0.7` segundos antes de utilizar de nuevo `backup`!",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 15548997,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.653Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!backup load 1033191205976014848",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.613Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "Por favor da la ID del backup a cargar!",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.433Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!backup load",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.191Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!backup load 1033191205976014848",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.074Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192037610180711/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": null,
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 16711680,
+                                        "fields": [
+                                            {
+                                                "name": "Backup ID",
+                                                "value": "1033191205976014848",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "ID del servidor",
+                                                "value": "1019043894635266048",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Tamaño",
+                                                "value": "146.41 kb",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Creado El:",
+                                                "value": "2022/10/22",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": {
+                                            "name": "Informacion del Backup"
+                                        },
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:17.771Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "general",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "principal",
+                        "topic": null,
+                        "permissions": [],
+                        "messages": [
+                            {
+                                "username": "Pegasu Global System",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                                "content": ":checkmark: **Se ha establecido el sistema de tickets en el canal #ticket**",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:21.264Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "Simulated Join event",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:21.147Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "Simulated Join event",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:21.011Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!simjoin",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.812Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "Simulated Join event",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.611Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!simjoin",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.557Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "<#1031296632999915611> is now set as Welcome Channel",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.392Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!setup welcome enable <#1031296632999915611>",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.191Z"
+                            },
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "No ah habido seleccion",
+                                        "type": "rich",
+                                        "description": "Escribe cualquier descripcion",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 15548997,
+                                        "fields": [
+                                            {
+                                                "name": "​",
+                                                "value": "__General__",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Canal de Bienvenidas",
+                                                "value": "Seccion: welcome",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Canal de Despedidas",
+                                                "value": "Seccion: Leave",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Fondo de Bienvenida",
+                                                "value": "Seccion: `welbg`",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Mensaje de Bienvenida",
+                                                "value": "Seccion: `welmsg`",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Prefix",
+                                                "value": "Seccion: `prefix`",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "​",
+                                                "value": "__Moderacion__",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Canal de logs (registros)",
+                                                "value": "Section: `logs`",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "​",
+                                                "value": "Funcionalidades",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "AI ChatBot",
+                                                "value": "Seccion: `chatbot`",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Niveles",
+                                                "value": "Seccion: `levels`",
+                                                "inline": true
+                                            },
+                                            {
+                                                "name": "Canal de Subida de nivel",
+                                                "value": "Seccion: `levelsup`",
+                                                "inline": true
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:17.963Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192038285463663/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "f!setup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:17.906Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "se",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "principal",
+                        "topic": null,
+                        "permissions": [],
+                        "messages": [
+                            {
+                                "username": "Floppa Utilities",
+                                "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                                "content": "¿Por qué quieres objetar la promesa?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T23:59:20.491Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                                "content": "no",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T23:59:19.254Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                                "content": "f!wanted",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:41:35.991Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                                "content": "f!wanted",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-25T00:40:41.429Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192044287508641/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "Epik",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.159Z"
+                            },
+                            {
+                                "username": "Floppa Utilities Beta",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192044287508641/29a8328d424e1e8b1840c5ab0aa992c4.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Message Deleted",
+                                        "type": "rich",
+                                        "description": "Tomcrack's messages was deleted in <#1019764307979948172>",
+                                        "url": null,
+                                        "timestamp": "2022-10-17T20:48:51.729Z",
+                                        "color": 5763719,
+                                        "fields": [
+                                            {
+                                                "name": "Message Content",
+                                                "value": "1030983244818161664",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:20.095Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192044287508641/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "m!suggest AÑA",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:19.981Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192044287508641/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "Prueba",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:19.823Z"
+                            },
+                            {
+                                "username": "Tomcrack",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192044287508641/417a5f87a2dea110c99e2fda24c683df.webp",
+                                "content": "pruab",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:19.650Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            },
+            {
+                "name": "tickets",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "children": [
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "🎫・ticket-tomcrack",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "tickets",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Floppa Utilities",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Pegasu Global System",
+                                "allow": "0",
+                                "deny": "1024"
+                            },
+                            {
+                                "roleName": "Floppa Utilities Beta",
+                                "allow": "0",
+                                "deny": "1024"
+                            }
+                        ],
+                        "messages": [
+                            {
+                                "username": "Pegasu Global System",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192040244191283/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                                "content": "@​Tomcrack",
+                                "embeds": [
+                                    {
+                                        "title": ":checkmark: TICKET RECLAMADO!",
+                                        "type": "rich",
+                                        "description": "El usuario <@590606524682993751> se encargará del ticket y ayudará al usuario <@590606524682993751>.",
+                                        "url": null,
+                                        "timestamp": "2022-10-22T01:32:28.625Z",
+                                        "color": 5763719,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.915Z"
+                            },
+                            {
+                                "username": "Pegasu Global System",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192040244191283/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                                "content": "@​Tomcrack",
+                                "embeds": [
+                                    {
+                                        "title": ":checkmark: TICKET RECLAMADO!",
+                                        "type": "rich",
+                                        "description": "El usuario <@590606524682993751> se encargará del ticket y ayudará al usuario <@590606524682993751>.",
+                                        "url": null,
+                                        "timestamp": "2022-10-22T01:32:26.648Z",
+                                        "color": 5763719,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.731Z"
+                            },
+                            {
+                                "username": "Pegasu Global System",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192040244191283/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                                "content": "@​Tomcrack",
+                                "embeds": [
+                                    {
+                                        "title": ":checkmark: TICKET RECLAMADO!",
+                                        "type": "rich",
+                                        "description": "El usuario <@590606524682993751> se encargará del ticket y ayudará al usuario <@590606524682993751>.",
+                                        "url": null,
+                                        "timestamp": "2022-10-22T01:32:26.299Z",
+                                        "color": 5763719,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.553Z"
+                            },
+                            {
+                                "username": "Pegasu Global System",
+                                "avatar": "https://cdn.discordapp.com/avatars/1033192040244191283/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                                "content": "@​Tomcrack",
+                                "embeds": [
+                                    {
+                                        "title": ":checkmark: TICKET RECLAMADO!",
+                                        "type": "rich",
+                                        "description": "El usuario <@590606524682993751> se encargará del ticket y ayudará al usuario <@590606524682993751>.",
+                                        "url": null,
+                                        "timestamp": "2022-10-22T01:32:25.103Z",
+                                        "color": 5763719,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false,
+                                "sentAt": "2022-10-22T01:36:18.408Z"
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            }
+        ],
+        "others": [
+            {
+                "type": "GUILD_TEXT",
+                "name": "ala",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": null,
+                "permissions": [],
+                "messages": [
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!backup create",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-11T00:01:24.416Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/998034248336424990/f36f0e2e3beb1b66ece993addf1bcc94.webp",
+                        "content": "<:xmarca:1011056306767020082> **Solo mis desarrolladores pueden usar este comando!**",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-08T23:33:47.731Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/998034248336424990/f36f0e2e3beb1b66ece993addf1bcc94.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Perfil de Tomcrack#6456",
+                                "type": "rich",
+                                "description": "**ID:**\n                > *590606524682993751*\n\n                **Insignias**\n                >        👤\n\n                **Warns:**\n                > *No tiene warns en este servidor.*\n\n                **Creación de la cuenta:**\n                > _<t:1560881968:R>_\n\n                **¿Usuario globalmente baneado?**\n                > *No está globalmente baneado.*",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3092790,
+                                "fields": [],
+                                "thumbnail": {
+                                    "url": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                                    "proxyURL": "https://images-ext-2.discordapp.net/external/EovtOxtYhsspcH5qELZrhortS1i80tQiUtci5kFAySM/https/cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                                    "height": 0,
+                                    "width": 0
+                                },
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-08T23:24:57.687Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/998034248336424990/f36f0e2e3beb1b66ece993addf1bcc94.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Perfil de Floppa Utilities#7642",
+                                "type": "rich",
+                                "description": "**ID:**\n                > *1016854204532412486*\n\n                **Insignias**\n                >        👤\n\n                **Warns:**\n                > *No tiene warns en este servidor.*\n\n                **Creación de la cuenta:**\n                > _<t:1662507335:R>_\n\n                **¿Usuario globalmente baneado?**\n                > *No está globalmente baneado.*",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3092790,
+                                "fields": [],
+                                "thumbnail": {
+                                    "url": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                                    "proxyURL": "https://images-ext-2.discordapp.net/external/ra2dFRtn-7Rrfy9QfF94PJ9uazJf2XZ_3tQ99dLxCus/https/cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                                    "height": 128,
+                                    "width": 128
+                                },
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-08T23:24:36.711Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda del servidor:",
+                                "type": "rich",
+                                "description": "**No hay items en la tienda del servidor**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 16719521,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": ":x: - Tomcrack#6456 Por el momento la tienda de Floppa Utilities esta vacia...",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:31:55.896Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:31:55.415Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:31:26.385Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda del servidor:",
+                                "type": "rich",
+                                "description": "**No hay items en la tienda del servidor**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 13715806,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": ":x: - Tomcrack#6456 Por el momento la tienda de Floppa Utilities esta vacia...",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:20:02.249Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:20:01.288Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda del servidor:",
+                                "type": "rich",
+                                "description": "**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas\n**undefined** - undefined monedas",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 7294569,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": ":x: - Tomcrack#6456 Por el momento la tienda de Floppa Utilities esta vacia...",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:18:00.540Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:18:00.077Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:16:55.576Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-07T19:16:20.936Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/998034248336424990/f36f0e2e3beb1b66ece993addf1bcc94.webp",
+                        "content": "<:xmarca:1011056306767020082> **Debes ser un usuario premium para poder realizar este comando!**",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T23:26:55.667Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/998034248336424990/f36f0e2e3beb1b66ece993addf1bcc94.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Comandos de __Pegasu Global System__",
+                                "type": "rich",
+                                "description": "¡Aquí esta la lista de comandos del bot `Pegasu Global System`! Si necesitas otro tipo de ayuda te puedes unir al servidor de soporte!.\n                    \n                    <:arrow:1011335050379415674> **Anti-raid**\n                    > `anti-raid`, `check`, `profile`, `settings`\n                    <:arrow:1011335050379415674> **Moderación**\n                    > `unban`, `ban`, `kick`, `clear`, `changename`, `lock`, `unlock`, `say`, `setnick`, `slowmode`, `timeout`, `untimeout`, `role`, `unwarn`, `warn`, `warnings`,\n                    <:arrow:1011335050379415674> **Sistemas**\n                    > `setup logs_anti-raid`, `setup suggestion`, `setup logs`, `setup ticket`, `setup bienvenidas`\n                    <:arrow:1011335050379415674> **Backups**\n                    > `backup create`, `backup load`, `backup info`\n                    <:arrow:1011335050379415674> **Información**\n                    > `help`, `uptime`, `info`, `invite`, `stats`\n                    <:arrow:1011335050379415674> **Utilidad**\n                    > `jumbo`, `suggest-decided`\n                    <:arrow:1011335050379415674> **Desarrolladores**\n                    >  `owner`, `addbadges`",
+                                "url": null,
+                                "timestamp": "2022-11-05T23:26:39.338Z",
+                                "color": 3092790,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Pegasu Global System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T23:26:39.182Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda",
+                                "type": "rich",
+                                "description": "Tienda del servidor:",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 16713424,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "**:x: No hay items en la tienda de este servidor**",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities:",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": ":x: - Tomcrack#6456 Por el momento la tienda de Floppa Utilities esta vacia...",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:36:06.059Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:36:05.718Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:35:24.903Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda",
+                                "type": "rich",
+                                "description": "Tienda del servidor:",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 12695651,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "**:x: No hay items en la tienda de este servidor**",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities:",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": ":x: - Tomcrack#6456 Por el momento la tienda de Floppa Utilities esta vacia...",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:34:57.582Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:34:57.275Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda",
+                                "type": "rich",
+                                "description": "Tienda del servidor:",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 7006626,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "**:x: No hay items en la tienda de este servidor**",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities:",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": ":x: - Tomcrack#6456 Por el momento la tienda de Floppa Utilities esta vacia...",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:14:10.481Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:14:10.127Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda",
+                                "type": "rich",
+                                "description": "Tienda del servidor:",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 13955904,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "No hay items en la tienda de este servidor",
+                                        "inline": false
+                                    },
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities:",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:13:00.981Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:13:00.723Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Tienda",
+                                "type": "rich",
+                                "description": "Tienda del servidor:",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 11609715,
+                                "fields": [
+                                    {
+                                        "name": "​",
+                                        "value": "Tienda de Floppa Utilities",
+                                        "inline": false
+                                    }
+                                ],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:11:38.989Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:11:38.768Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!shop",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-05T16:10:44.929Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "https://floppabot.tech/",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-03T00:51:58.810Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "https://floppabot.tech/",
+                        "embeds": [
+                            {
+                                "title": "Floppa Utilities es un bot multiusos. Floppa te puede ayudar a conf...",
+                                "type": "rich",
+                                "description": "Github: diwasatreya",
+                                "url": "https://floppabot.tech/",
+                                "timestamp": null,
+                                "color": null,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-03T00:46:14.577Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "https://floppabot.tech",
+                        "embeds": [
+                            {
+                                "title": "Floppa Utilities es un bot multiusos. Floppa te puede ayudar a conf...",
+                                "type": "rich",
+                                "description": "Github: diwasatreya",
+                                "url": "https://floppabot.tech/",
+                                "timestamp": null,
+                                "color": null,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-11-03T00:42:34.079Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "No estas registrado en la Economia de floppa utilities! Utiliza f!register para registrarte!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:37:11.873Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!work",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:37:11.460Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!worjk",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:37:09.751Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Balance de Tomcrack",
+                                "type": "rich",
+                                "description": ":x: - No esta registrado en la economia de floppa Utilities",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 5763719,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:37:07.641Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!bal",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:37:07.116Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Balance de Tomcrack",
+                                "type": "rich",
+                                "description": "**Dinero: 155**\n**Dinero en el banco: null**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 5763719,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:33:24.373Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!bal",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:33:23.954Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Crimen",
+                                "type": "rich",
+                                "description": "**El usuario <@590606524682993751> robo una casa y obtuvo 155$**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 5763719,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:33:17.767Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!crime",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:33:17.416Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!crime",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:32:37.784Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "?????",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:31:50.403Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Trabajo",
+                                "type": "rich",
+                                "description": "**El usuario <@590606524682993751> acaba de trabajar de programador y obtuvo 320$**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 5763719,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:31:47.116Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!work",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:31:46.756Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Balance de Tomcrack",
+                                "type": "rich",
+                                "description": ":x: - No esta registrado en la economia de floppa Utilities",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 5763719,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:31:43.353Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!bal",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T19:31:42.843Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Bienvenido de vuelta! He removido tu estado de afk. ([object Promise])",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T01:22:04.165Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "isu",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T01:22:03.666Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "e",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T01:20:36.908Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "eeeeeee",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T01:20:31.763Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Te acabas de registrar en la economia de Floppa Utilities!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:51:27.738Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:51:27.303Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Trabajo",
+                                "type": "rich",
+                                "description": "**El usuario <@590606524682993751> acaba de trabajar de diseñador y obtuvo 697$**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 5763719,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:51:23.780Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!work",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:51:22.934Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Te acabas de registrar en la economia de Floppa Utilities!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:45:37.902Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:45:37.554Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Ya estas registrado en la Economia de floppa utilities!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:43:19.187Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:43:18.916Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Ya estas registrado en la Economia de floppa utilities!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:40:20.312Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:40:19.828Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Ya estas registrado en la Economia de floppa utilities!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:37:58.466Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-29T00:37:58.049Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": ":x: - Ya estas registrado en la economia de floppa Utilitites",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-28T23:41:41.136Z"
+                    },
+                    {
+                        "username": "GregDiary",
+                        "avatar": "https://cdn.discordapp.com/avatars/790633387534712862/c87442bb7174f024e287b4e4759759e7.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-28T23:41:40.923Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "Ya estas registrado en la economia de Floppa Utilities en este servidor",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-27T23:44:08.062Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!register",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-27T23:44:07.741Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "#se Es ahora el canal de Chatbot",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-25T23:59:16.411Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!setup chatbot enable #se",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-25T23:59:15.824Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": "!! - Por favor da una opcion valida entre 'enable' o 'disable'! (enable = habilitar) (disable = desabilitar)",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-25T23:59:09.933Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/590606524682993751/77ae453fedc0ca8f3b7ff2bb44cf292b.webp",
+                        "content": "f!setup chatbot",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-25T23:59:09.327Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": ":white_check_mark: Se ah quitado el timeout de <@790633387534712862>",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3447003,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T20:19:06.712Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": ":white_check_mark: - <@790633387534712862> ha sido timeado por **1 Semana** por: !! - No se ha dado razon",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3447003,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T20:18:47.027Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": ":white_check_mark: Se ah quitado el timeout de <@790633387534712862>",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3447003,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T20:18:35.706Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": ":white_check_mark: - <@790633387534712862> ha sido timeado por **1 Hora** por: xd",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3447003,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T20:07:36.995Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": ":white_check_mark: - <@631223659255693315> ha sido timeado por **60 Segundos** por: !! - No se ha dado razon",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3447003,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T19:56:58.434Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": ":white_check_mark: - <@790633387534712862> ha sido timeado por **5 Minutos** por: XD",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 3447003,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T19:54:00.239Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "POING",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T00:43:51.030Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "NO TIENES PERMISO PARA EJECUTAR ESTE COMANDO",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T00:42:53.299Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1016854204532412486/18a29d231c69534f171af895e7f47dd8.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": null,
+                                "type": "rich",
+                                "description": "**CLIENTE**: `🟢ONLINE` - `43ms`\n **Uptime**: <t:1666485723:R>\n**DATABASE**: `🟢 CONECTADO`",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 1752220,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-23T00:42:50.343Z"
+                    },
+                    {
+                        "username": "Floppa Utilities Beta",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/29a8328d424e1e8b1840c5ab0aa992c4.webp",
+                        "content": "Message updates will be logged in #se",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:20.943Z"
+                    },
+                    {
+                        "username": "Floppa Utilities Beta",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/29a8328d424e1e8b1840c5ab0aa992c4.webp",
+                        "content": "This message will be edited, each time you change a setting!",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:20.810Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": ":alert: ANTI LINKS :alert:",
+                                "type": "rich",
+                                "description": "**<@790633387534712862> no se puede enviar enlaces en este servidor!**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": {
+                                    "url": "https://cdn.discordapp.com/avatars/998034248336424990/b09913cf46ba270ffcfc9ad821228cd3.webp",
+                                    "proxyURL": "https://images-ext-1.discordapp.net/external/LEAMAeAw0wGO4PRzgYJsVBzuMvRFrlxilC9JZ_X0Jzs/https/cdn.discordapp.com/avatars/998034248336424990/b09913cf46ba270ffcfc9ad821228cd3.webp",
+                                    "height": 128,
+                                    "width": 128
+                                },
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "El sistema anti-links esta activado!"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:20.616Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/417a5f87a2dea110c99e2fda24c683df.webp",
+                        "content": "XD",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:20.474Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                        "content": ":checkmark: **Se ha __ACTIVADO__ el sistema anti links!**\n:arrow: **Todo usuario que envie links será muteado por 5 minutos!**",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:18.405Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Comandos de __Pegasu Global System__",
+                                "type": "rich",
+                                "description": "¡Aquí esta la lista de comandos del bot `Pegasu Global System`! Si necesitas otro tipo de ayuda te puedes unir al servidor de soporte!.\n                    \n                    :arrow: **Anti-raid**\n                    > `anti-raid`, `check`, `profile`, `settings`\n                    :arrow: **Moderación**\n                    > `unban`, `ban`, `kick`, `clear`, `changename`, `lock`, `lockall`, `unlockall`, `unlock`, `say`, `setnick`, `slowmode`, `timeout`, `untimeout`, `role`, `unwarn`, `warn`, `warnings`,\n                    :arrow: **Sistemas**\n                    > `setup logs_anti-raid`, `setup suggestion`, `setup logs`, `setup ticket`\n                    :arrow: **Backups**\n                    > `backup create`, `backup load`, `backup info`\n                    :arrow: **Información**\n                    > `help`, `uptime`, `info`, `invite`, `stats`\n                    :arrow: **Utilidad**\n                    > `jumbo`, `suggest-decided`\n                    :arrow: **Desarrolladores**\n                    >  `owner`, `addbadges`",
+                                "url": null,
+                                "timestamp": "2022-10-17T20:19:05.974Z",
+                                "color": 3092790,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": {
+                                    "text": "Pegasu Global System"
+                                }
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:18.201Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                        "content": ":checkmark: **Se ha establecido el canal #tomcrack-ticket como canal de sugerencias!**",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:17.999Z"
+                    },
+                    {
+                        "username": "Pegasu Global System",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/2f16979efaccd4f9108faf0c0e1a175a.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": ":checkmark: EXITO!",
+                                "type": "rich",
+                                "description": "**El canal <#1019768388861575268> se ha establecido como canal de sugerencias!**",
+                                "url": null,
+                                "timestamp": null,
+                                "color": 15548997,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:17.768Z"
+                    },
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192036788092941/417a5f87a2dea110c99e2fda24c683df.webp",
+                        "content": "m!setup-suggest #general",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:17.637Z"
+                    }
+                ],
+                "isNews": false,
+                "threads": []
+            },
+            {
+                "type": "GUILD_TEXT",
+                "name": "tomcrack-ticket",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": "NO",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    },
+                    {
+                        "roleName": "Ticket Support",
+                        "allow": "1024",
+                        "deny": "0"
+                    }
+                ],
+                "messages": [
+                    {
+                        "username": "Tomcrack",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192037882798080/417a5f87a2dea110c99e2fda24c683df.webp",
+                        "content": "Permsomas",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:19.688Z"
+                    },
+                    {
+                        "username": "Floppa Utilities",
+                        "avatar": "https://cdn.discordapp.com/avatars/1033192037882798080/de59a2a5e5abd2a8d18058e092bff28c.webp",
+                        "content": "",
+                        "embeds": [
+                            {
+                                "title": "Floppa Utilities Test Functions",
+                                "type": "rich",
+                                "description": "Explain here what do you need.",
+                                "url": null,
+                                "timestamp": null,
+                                "color": null,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false,
+                        "sentAt": "2022-10-22T01:36:17.820Z"
+                    }
+                ],
+                "isNews": false,
+                "threads": []
+            }
+        ]
+    },
+    "roles": [
+        {
+            "name": "Ticket Support",
+            "color": "#ff0000",
+            "hoist": false,
+            "permissions": "3072",
+            "mentionable": false,
+            "position": 4,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [],
+    "members": [],
+    "createdTimestamp": 1668124884581,
+    "guildID": "1019043894635266048",
+    "id": "1040415916896157696"
+}
