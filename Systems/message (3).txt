@@ -1,0 +1,891 @@
+
+
+
+const Discord = require("discord.js") 
+const client = new Discord.Client({ intents: 32767 });
+const { Client, MessageButton, MessageActionRow, MessageEmbed } = require('discord.js');
+const db = require('megadb')
+
+
+const fs = require('fs');
+let { readdirSync } = require('fs');
+
+const config = require("./config.json")
+
+const express = require('express')
+const app = express()
+
+app.get("/", (req, res) => {
+  res.send(`Hora de trabajar!`)
+})
+
+app.listen(3000, () => {
+  console.log(`El monitor del host esta activo!`)
+})
+
+
+
+//Error catch
+
+process.on('unhandledRejection', error => {
+  console.error(error);
+});
+client.on('shardError', error => {
+  console.error(error);
+});
+
+
+client.commands = new Discord.Collection()
+
+fs.readdirSync('./commands').forEach(async(categorys) => {
+  
+const commandFiles = fs.readdirSync(`./commands/${categorys}`).filter((archivo) => archivo.endsWith('js'))
+  for(const archivo of commandFiles){
+    const command = require(`./commands/${categorys}/${archivo}`)
+    client.commands.set(command.name, command)
+  }
+})
+
+
+client.on('ready', () => {
+  console.log(`Logeado como: ${client.user.tag}`)
+});
+
+client.on('messageCreate', async (message) => {
+
+  let prefix = config.prefix
+  if (!message.content.startsWith(prefix)) return;
+
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+
+  let cmd = client.commands.find((c) => c.name === command || c.alias && c.alias.includes(command));
+
+
+  if (cmd) {
+    try {
+      cmd.execute(client, message, args)
+    } catch (e) {
+      return;
+    }
+  }
+
+});
+
+
+
+client.on('interactionCreate', async interaction => {
+
+
+  if (interaction.isButton()) {
+
+    if (interaction.customId === 'helpp') {
+
+      const butonsw = new Discord.MessageActionRow()
+        .addComponents(
+
+          new Discord.MessageButton()
+            .setCustomId("soporte")
+            .setStyle("SECONDARY")
+            .setLabel("Exchanges.")
+            .setEmoji('<:icons_Person:859388129932214292>'),            
+          
+          new Discord.MessageButton()
+            .setCustomId("adq")
+            .setStyle("SECONDARY")
+            .setLabel("Technical support")
+            .setEmoji(`<:icons_box:869507189298040833>`),
+
+          new Discord.MessageButton()
+            .setCustomId("resell")
+            .setStyle("SECONDARY")
+            .setLabel("Doubts")
+            .setEmoji(`<:icons_connect:875395223512047626>`),
+
+          new Discord.MessageButton()
+            .setCustomId("faccioens")
+            .setStyle("SECONDARY")
+            .setLabel("Staff Application")
+            .setEmoji(`<:icons_connect:875395223512047626>`)
+
+
+        )
+
+
+      const embedsw = new Discord.MessageEmbed()
+        .setTitle("Tickets Darkus EXchanges.")
+        .setDescription("Welcome to the Ticket System of **Darkus EXchanges.**. Choose the right Ticket category.")
+        .setColor("#2f3136")
+
+
+      interaction.reply({ embeds: [embedsw], ephemeral: true, components: [butonsw] })
+
+
+
+    }
+
+  }
+
+});
+
+// tickets
+
+client.on('interactionCreate', async interaction => {
+
+  const role = interaction.guild.roles.cache.get(config.rolstaff) //staff
+
+  if (interaction.isButton()) {
+
+    if (interaction.customId === "soporte") {
+
+      let trg = interaction.user.username
+           
+  
+
+      const tucke = await interaction.guild.channels.create(`❓・support-${trg}`, {
+
+        type: "text",
+        lockPermissions: true,
+
+        permissionOverwrites: [{
+
+          id: interaction.user.id,
+          allow: ["VIEW_CHANNEL"],
+          deny: ["ADD_REACTIONS"]
+
+        }, {
+
+          id: config.rolstaff, allow: [`VIEW_CHANNEL`]
+
+        }, {
+
+          id: interaction.guild.roles.everyone.id, deny: ["VIEW_CHANNEL"]
+        }
+
+        ]
+      })
+
+      const embed2 = new Discord.MessageEmbed()
+      
+        .setDescription(`**${trg}**, his **TICKET** was successfully created on the channel <#${tucke.id}>`)
+        .setColor("#2f3136")
+      
+      interaction.reply({ embeds: [embed2], ephemeral: true })
+        .then(async (b) => {
+
+          tucke.send(`<@&${role}>`).then((a) => a.delete())
+          tucke.send(`<@${interaction.user.id}>`)
+          tucke.setParent("1009395275393138769", { lockPermissions: false }) // Categoría
+
+
+          const row = new Discord.MessageActionRow()
+
+          .addComponents(
+
+            new Discord.MessageButton()
+
+              .setCustomId("clos")
+              .setStyle("DANGER")
+              .setEmoji("<:icons_Wrong:859388130636988436>")
+              .setLabel("Close"),
+
+            new Discord.MessageButton()
+            
+              .setCustomId("staff")
+              .setStyle("PRIMARY")
+              .setLabel("Staff Actions")
+              .setEmoji(`<:icons_eventcolour:870646213429563445>`),
+
+            new Discord.MessageButton()
+            
+              .setCustomId("asumir")
+              .setStyle("SUCCESS")
+              .setLabel("Assume ticket")
+              .setEmoji('<:icons_Correct:859388130411282442>'),
+
+            new Discord.MessageButton()
+            
+              .setCustomId("salir")
+              .setStyle("SECONDARY")
+              .setLabel("Exit the ticket")
+              .setEmoji('<:icons_dleave:875754473023229972>')
+
+          )
+
+
+          const embed = new Discord.MessageEmbed()
+            .setAuthor(`${interaction.guild.name}`, interaction.guild.iconURL({ dynamic: true }))
+            .setDescription(`Welcome to tickets of **Darkus EXchanges.**. Staff members will assist you as quickly as possible!`)
+            .setColor("#2f3136")
+
+          tucke.send({ embeds: [embed], components: [row] })
+
+        })
+    }
+  }
+});
+
+client.on('interactionCreate', async interaction => {
+
+  const role = interaction.guild.roles.cache.get(config.rolstaff) //staff
+
+  if (interaction.isButton()) {
+
+    if (interaction.customId === "adq") {
+
+      let trg = interaction.user.username
+  
+
+      const tucke = await interaction.guild.channels.create(`💸・acquisition-${trg}`, {
+
+        type: "text",
+        lockPermissions: true,
+
+        permissionOverwrites: [{
+
+          id: interaction.user.id,
+          allow: ["VIEW_CHANNEL"],
+          deny: ["ADD_REACTIONS"]
+
+        }, {
+
+          id: config.rolstaff, allow: [`VIEW_CHANNEL`]
+
+        }, {
+
+          id: interaction.guild.roles.everyone.id, deny: ["VIEW_CHANNEL"]
+        }
+
+        ]
+      })
+
+      const embed2 = new Discord.MessageEmbed()
+      
+        .setDescription(`**${trg}**, his **TICKET** was successfully created on the channel <#${tucke.id}>`)
+        .setColor("#2f3136")
+        
+      interaction.reply({ embeds: [embed2], ephemeral: true })
+        .then(async (b) => {
+
+          tucke.send(`<@&${role}>`).then((a) => a.delete())
+          tucke.send(`<@${interaction.user.id}>`)
+          tucke.setParent("1009395276143923230", { lockPermissions: false })
+
+
+          const row = new Discord.MessageActionRow()
+
+            .addComponents(
+
+              new Discord.MessageButton()
+
+                .setCustomId("clos")
+                .setStyle("DANGER")
+                .setEmoji("<:icons_Wrong:859388130636988436>")
+                .setLabel("Close"),
+
+              new Discord.MessageButton()
+              
+                .setCustomId("staff")
+                .setStyle("PRIMARY")
+                .setLabel("Staff Actions")
+                .setEmoji(`<:icons_eventcolour:870646213429563445>`),
+
+              new Discord.MessageButton()
+              
+                .setCustomId("asumir")
+                .setStyle("SUCCESS")
+                .setLabel("Assume ticket")
+                .setEmoji('<:icons_Correct:859388130411282442>'),
+
+              new Discord.MessageButton()
+              
+                .setCustomId("salir")
+                .setStyle("SECONDARY")
+                .setLabel("Exit the ticket")
+                .setEmoji('<:icons_dleave:875754473023229972>')
+
+            )
+
+
+          const embed = new Discord.MessageEmbed()
+            .setAuthor(`${interaction.guild.name}`, interaction.guild.iconURL({ dynamic: true }))
+            .setDescription(`Welcome to tickets of **Darkus EXchanges.**. Staff members will assist you as quickly as possible!`)
+            .setColor("#2f3136")
+
+          tucke.send({ embeds: [embed], components: [row] })
+
+        })
+    }
+  }
+});
+
+client.on('interactionCreate', async interaction => {
+
+  const role = interaction.guild.roles.cache.get(config.rolstaff) //staff
+
+  if (interaction.isButton()) {
+
+    if (interaction.customId === "resell") {
+
+      let trg = interaction.user.username
+           
+  
+
+      const tucke = await interaction.guild.channels.create(`🌵・reseller-${trg}`, {
+
+        type: "text",
+        lockPermissions: true,
+
+        permissionOverwrites: [{
+
+          id: interaction.user.id,
+          allow: ["VIEW_CHANNEL"],
+          deny: ["ADD_REACTIONS"]
+
+        }, {
+
+          id: config.rolstaff, allow: [`VIEW_CHANNEL`]
+
+        }, {
+
+          id: interaction.guild.roles.everyone.id, deny: ["VIEW_CHANNEL"]
+        }
+
+        ]
+      })
+
+      const embed2 = new Discord.MessageEmbed()
+      
+        .setDescription(`**${trg}**, his **TICKET** was successfully created on the channel <#${tucke.id}>`)
+        .setColor("#2f3136")
+      
+      interaction.reply({ embeds: [embed2], ephemeral: true })
+        .then(async (b) => {
+
+          tucke.send(`<@&${role}>`).then((a) => a.delete())
+          tucke.send(`<@${interaction.user.id}>`)
+          tucke.setParent("1009395292010983486", { lockPermissions: false })
+
+
+          const row = new Discord.MessageActionRow()
+
+            .addComponents(
+
+              new Discord.MessageButton()
+
+                .setCustomId("clos")
+                .setStyle("DANGER")
+                .setEmoji("<:icons_Wrong:859388130636988436>")
+                .setLabel("Close"),
+
+              new Discord.MessageButton()
+              
+                .setCustomId("staff")
+                .setStyle("PRIMARY")
+                .setLabel("Staff Actions")
+                .setEmoji(`<:icons_eventcolour:870646213429563445>`),
+
+              new Discord.MessageButton()
+              
+                .setCustomId("asumir")
+                .setStyle("SUCCESS")
+                .setLabel("Assume ticket")
+                .setEmoji('<:icons_Correct:859388130411282442>'),
+
+              new Discord.MessageButton()
+              
+                .setCustomId("salir")
+                .setStyle("SECONDARY")
+                .setLabel("Save the ticket")
+                .setEmoji('<:icons_dleave:875754473023229972>')
+
+            )
+
+
+          const embed = new Discord.MessageEmbed()
+            .setAuthor(`${interaction.guild.name}`, interaction.guild.iconURL({ dynamic: true }))
+            .setDescription(`Welcome to tickets of **Darkus EXchanges.**. Staff members will assist you as quickly as possible!`)
+            .setColor("#2f3136")
+
+          tucke.send({ embeds: [embed], components: [row] })
+
+        })
+    }
+  }
+});
+
+// await messages
+
+client.on('interactionCreate', async interaction => {
+
+  const row = new Discord.MessageActionRow()
+
+    .addComponents(
+
+      new Discord.MessageButton()
+
+        .setCustomId("agregar")
+        .setStyle("SUCCESS")
+        .setLabel("Add Member")
+        .setEmoji(`<:icons_djoin:875754472834469948>`),
+
+      new Discord.MessageButton()
+
+        .setCustomId("remover")
+        .setStyle("DANGER")
+        .setLabel("Remove member")
+        .setEmoji(`<:icons_kick:859424400557604886>`),
+
+      new Discord.MessageButton()
+
+        .setCustomId("renombrar")
+        .setStyle("PRIMARY")
+        .setLabel("Rename channel")
+        .setEmoji('<:icons_edit:859388129625374720>'),
+
+      new Discord.MessageButton()
+
+        .setCustomId("vozcrear")
+        .setStyle("SECONDARY")
+        .setLabel("Create VoiceRoom")
+        .setEmoji('<:icons_createchannel:866943415643799552>'),
+
+      new Discord.MessageButton()
+
+      .setCustomId("transcript")
+      .setStyle("SECONDARY")
+      .setLabel("Save the ticket")
+      .setEmoji(`<:icons_richpresence:860133546173923388>`)
+
+    )
+
+
+  if (interaction.isButton()) {
+
+
+    if (interaction.customId === 'staff') {
+
+      await interaction.deferUpdate()
+
+      const embed2 = new Discord.MessageEmbed()
+      .setDescription(`Only staff members can use this command! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed2] })
+
+      const embed = new Discord.MessageEmbed()
+      .setTitle("Staff Actions")
+      .setDescription("Click on the buttons below according to the actions you want to perform")
+      .setFooter("This button can only be used by the staff")
+      .setColor("#2f3136")
+
+      const m = interaction.channel.send({ embeds: [embed], components: [row] })
+
+    }
+
+    if (interaction.customId === 'asumir') {
+
+      await interaction.deferUpdate()
+
+      const embed2 = new Discord.MessageEmbed()
+      .setDescription(`Only staff members can use this command! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed2] })
+
+      const embed = new Discord.MessageEmbed()
+      .setTitle("Someone took over")
+      .setDescription(`<@${interaction.user.id}> has assumed the ticket`)
+      .setColor("#2f3136")
+
+      interaction.channel.send({ embeds: [embed]  })
+
+    }
+
+      if (interaction.customId === 'salir') {
+
+      await interaction.deferUpdate()
+
+        interaction.channel.permissionOverwrites.edit(interaction.user.id, {
+
+           VIEW_CHANNEL: false 
+         
+         });
+
+      const embed = new Discord.MessageEmbed()
+      .setTitle("Exit")
+      .setDescription(`<@${interaction.user.id}> has left the ticket`)
+      .setColor("#2f3136")
+
+      interaction.channel.send({ embeds: [embed] })
+
+    }
+
+    if (interaction.customId === 'agregar') {
+
+      const embed22 = new Discord.MessageEmbed()
+      .setDescription(`Solo los miembros del staff pueden utilizar este comando! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed22] })
+
+      const emebd2 = new Discord.MessageEmbed()
+      .setDescription("Mention someone to add to the **TICKET**")
+      .setColor("#2f3136")
+
+      const mens = await interaction.channel.send({ embeds: [emebd2] })
+
+      
+      const filter = (m) => m.author.id === interaction.user.id && m.mentions.members.first();
+    
+      const collector = interaction.channel.createMessageCollector({
+        
+        filter: filter,
+        time: 10000,
+        max: 1  
+      
+      }) 
+       
+
+      collector.on('collect', async (me) => {
+
+        mens.delete();
+        
+        console.log(`Collected: ${me.content}`)
+        
+      })
+
+      collector.on('end', async collected => {
+        
+        if(collected.size === 0) {
+
+          mens.delete();
+
+          const emebed = new Disccord.MessageEmbed()
+          .setDescription("You didn't mention anyone!")
+          .setColor('#2f3136')
+        
+          interaction.channel.send({ embeds: [emebed] })
+          
+          return;
+        
+        }    
+  
+        
+        collected.forEach((message) => {
+          
+          trg = `${message.content}`   
+
+         interaction.channel.permissionOverwrites.edit(message.mentions.users.first().id, {
+
+           VIEW_CHANNEL: true 
+         
+         });
+          
+          const embed5 = new Discord.MessageEmbed()
+          .setDescription(`<@${message.mentions.users.first().id}>, **has been successfully added** from the ticket.`)
+          .setColor("#2f3136")
+
+          interaction.followUp({ embeds: [embed5] })     
+          
+        }) 
+       
+      
+      })
+     
+      await interaction.deferUpdate()
+    
+    }
+
+
+
+    if (interaction.customId === 'remover') {
+
+      const embed2 = new Discord.MessageEmbed()
+      .setDescription(`Only staff members can use this command! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed2] })
+
+      const emebd3 = new Discord.MessageEmbed()
+      .setDescription("Mention someone to get you out of the **TICKET**")
+      .setColor("#2f3136")
+
+      const mens = await interaction.channel.send({ embeds: [emebd3] })
+
+      
+      const filter = (m) => m.author.id === interaction.user.id && m.mentions.members.first();
+    
+      const collector = interaction.channel.createMessageCollector({
+        
+        filter: filter,
+        time: 10000,
+        max: 1  
+      
+      }) 
+       
+
+      collector.on('collect', (me) => {
+
+        mens.delete()
+        
+        console.log(`Collected: ${me.content}`)
+  
+      })
+
+      collector.on('end', async collected => {
+        if(collected.size === 0) {
+
+          mens.delete();
+
+          const emebed = new Disccord.MessageEmbed()
+          .setDescription("You didn't mention anyone!")
+          .setColor('#2f3136')
+        
+          interaction.channel.send({ embeds: [emebed] })
+        
+        }
+
+          
+  
+        
+        collected.forEach((message) => {
+          
+          trg = `${message.content}`    
+   
+         interaction.channel.permissionOverwrites.edit(message.mentions.users.first().id, {
+
+           VIEW_CHANNEL: false 
+         
+         });
+
+          const embed4 = new Discord.MessageEmbed()
+          .setDescription(`<@${message.mentions.users.first().id}>, **has been successfully removed** from the ticket.`)
+          .setColor("#2f3136")
+
+          interaction.followUp({ embeds: [embed4] })
+        
+        }) 
+       
+      
+      })
+      
+      await interaction.deferUpdate()
+      
+    }
+
+    if (interaction.customId === 'renombrar') {
+
+      const embed2 = new Discord.MessageEmbed()
+      .setDescription(`Only staff members can use this command! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed2] })
+
+      const emebd3 = new Discord.MessageEmbed()
+      .setDescription("Type something to rename the **TICKET**")
+      .setColor("#2f3136")
+
+      const mens = await interaction.channel.send({ embeds: [emebd3] })
+
+      const filter = (m) => m.author.id === interaction.user.id;
+    
+      const collector = interaction.channel.createMessageCollector({
+        
+        filter: filter,
+        time: 10000,
+        max: 1  
+      
+      }) 
+       
+
+      collector.on('collect', (me) => {
+
+         mens.delete()
+        
+        console.log(`Collected: ${me.content}`)
+        
+      })
+
+      collector.on('end', async collected => {
+        if(collected.size === 0) {
+
+          mens.delete();
+
+          const emebed = new Disccord.MessageEmbed()
+          .setDescription("You didn't write anything!")
+          .setColor('#2f3136')
+        
+          interaction.channel.send({ embeds: [emebed] })
+        
+        }
+
+          
+  
+        
+        collected.forEach((message) => {
+          
+          interaction.channel.setName(`✅・${message.content}`)
+         
+          const embed42 = new Discord.MessageEmbed()
+          .setDescription(`The channel has been **renamed** successfully to ${message.content}!`)
+          .setColor("#2f3136")
+
+          interaction.followUp({ embeds: [embed42] })
+        
+        }) 
+       
+      
+      })
+      
+      await interaction.deferUpdate()
+      
+    }
+
+    if (interaction.customId === 'vozcrear') {
+
+      await interaction.deferUpdate()
+
+      const embed2 = new Discord.MessageEmbed()
+      .setDescription(`Only staff members can use this command! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed2] })
+
+       const tucke = await interaction.guild.channels.create(`🎤・voice-ticket`, {
+
+        type: "GUILD_VOICE",
+        lockPermissions: true,
+
+        permissionOverwrites: [{
+
+          id: config.rolstaff, allow: [`VIEW_CHANNEL`]
+
+        }, {
+
+          id: interaction.guild.roles.everyone.id, deny: ["VIEW_CHANNEL"]
+        }
+
+        ]
+      })
+
+      tucke.setParent("1009395275393138769", { lockPermissions: false })
+
+      const embed42e = new Discord.MessageEmbed()
+          .setDescription(`A voice channel has been created!`)
+          .setColor("#2f3136")
+      
+      
+      interaction.followUp({ embeds: [embed42e] })
+      
+      
+    }
+
+    if (interaction.customId === 'transcript') {
+
+      await interaction.deferUpdate()
+      
+      const embed2 = new Discord.MessageEmbed()
+      .setDescription(`Only staff members can use this command! <@${interaction.user.id}>` )
+      .setColor("#2f3136")
+
+      if(!interaction.member.roles.cache.has(config.rolstaff)) return interaction.channel.send({ embeds: [embed2] })
+
+      
+      const discordTranscripts = require('discord-html-transcripts');
+
+      const channel = interaction.channel; 
+
+      const embed =  new Discord.MessageEmbed()
+      .setDescription(`Saved ticket!` )
+      .setColor("#2f3136")
+      
+
+      const attachment = await discordTranscripts.createTranscript(channel,       {
+        fileName: `${interaction.channel.name}.html`
+      });
+
+      channel.send({
+        embeds: [embed],
+        files: [attachment]
+      });
+
+    }
+
+
+  }
+
+})
+
+
+// cancel segui
+
+client.on('interactionCreate', async interaction => {
+
+  const row = new Discord.MessageActionRow()
+
+    .addComponents(
+
+      new Discord.MessageButton()
+
+        .setCustomId("segui")
+        .setStyle("SUCCESS")
+        .setLabel("Confirm")
+        .setEmoji(`<:icons_warning:908958943466893323>`),
+
+      new Discord.MessageButton()
+
+        .setCustomId("cancel")
+        .setStyle("DANGER")
+        .setLabel("Cancel")
+        .setEmoji(`<:icons_Wrong:859388130636988436>`),
+
+    )
+
+
+  if (interaction.isButton()) {
+
+
+    if (interaction.customId === 'clos') {
+
+      await interaction.deferUpdate()
+
+      const embed415 = new Discord.MessageEmbed()
+      .setDescription("¿You are sure to close ticket?")
+      .setColor("#2f3136")
+
+      const m = interaction.channel.send({ embeds: [embed415], components: [row] })
+
+    }
+
+    if (interaction.customId === 'cancel') {
+      
+      await interaction.message.delete()
+      await interaction.deferUpdate()
+    
+    }
+
+
+
+    if (interaction.customId === 'segui') {
+
+      await interaction.deferUpdate()
+
+      const embed90 = new Discord.MessageEmbed()
+      .setDescription("This ticket will be deleted in **5** seconds.")
+      .setColor("#2f3136")
+
+      interaction.followUp({ embeds: [embed90] })
+        
+      .then((c) => setTimeout(() => {interaction.channel.delete()}, 5000))
+    
+    }
+
+
+  }
+
+})
+
+
+client.login(config.token)

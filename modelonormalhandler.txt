@@ -1,0 +1,18 @@
+const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const { Database } = require("quickmongo")
+const mongourl = process.env['mongourl']
+const db = new Database(mongourl)
+module.exports = {
+	name: 'ping',
+	aliases: ['latency'],
+	description: "Nos muestra el ping actual de Floppa",
+	usage: ".ping",
+	cooldown: 2,
+	UserPerms: [""],
+	BotPerms:["MANAGE_MESSAGES"],
+
+	execute (client, message, cmd, args, Discord) {
+
+	}
+}
